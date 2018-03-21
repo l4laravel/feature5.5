@@ -33,3 +33,24 @@ Route::get('/users',function (){
     return $users->sortByDesc('id')->dump()->where('created_at', '2018-03-21 16:20:13')->dump();
 
 });
+
+Route::post('add-users',function (\Illuminate\Http\Request, $request){
+
+    // this is old way
+    $this->validate($request,[
+       'title' => 'required',
+       'content' =>'required'
+
+    ]);
+
+    // new way right now
+
+    $request->validate([
+        'title' => 'required',
+        'content' =>'required'
+
+    ])
+
+
+});
+
