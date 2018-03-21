@@ -18,7 +18,7 @@ class SayHello extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Testing Command';
 
     /**
      * Create a new command instance.
@@ -37,6 +37,6 @@ class SayHello extends Command
      */
     public function handle()
     {
-        //
+        $this->info("working our command");
     }
 }
