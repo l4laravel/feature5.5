@@ -11,6 +11,9 @@
     },
     "devDependencies": {
         "axios": "^0.18",
+        "babel-preset-react": "^6.24.1",
+        "bulma": "^0.6.2",
+        "bulma-extensions": "^0.7.5",
         "cross-env": "^5.1",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4"
