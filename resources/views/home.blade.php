@@ -12,7 +12,8 @@
                     </header>
 
                     <div class="card-content">
-                        You are logged in!
+
+
                     </div>
                 </nav>
             </div>
