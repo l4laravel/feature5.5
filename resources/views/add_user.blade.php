@@ -28,6 +28,7 @@
                             <input type="text" placeholder="name" name="name">
                             <input type="text" placeholder="email" name="email">
                             <input type="text" placeholder="password" name="password">
+                            <input type="text" placeholder="phone" name="phone">
                             <input type="submit" value="submit">
 
 

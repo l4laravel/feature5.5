@@ -25,7 +25,15 @@ class ValidPhone implements Rule
      */
     public function passes($attribute, $value)
     {
-        //
+        if (!empty($value)){
+            $non_digits = [' ','(', ')', '-', '.', '+'];
+            $nums = str_replace($non_digits, '', $value);
+            if (strlen($nums)== 10){
+                return true;
+            }
+
+        }
+        return false;
     }
 
     /**
@@ -35,6 +43,6 @@ class ValidPhone implements Rule
      */
     public function message()
     {
-        return 'The validation error message.';
+        return 'This is not a valid U.S Phone number.';
     }
 }

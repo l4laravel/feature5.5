@@ -11,6 +11,8 @@
 |
 */
 
+use App\Rules\ValidPhone;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -53,12 +55,12 @@ Route::post('add-user',function (\Illuminate\Http\Request $request){
 
     // new way right now
 
-   /* $request->validate([
+    $request->validate([
         'name' => 'required',
         'email' =>'required',
-        'password' =>'required'
-
-    ]);*/
+        'password' =>'required',
+        'phone' => ['required', new ValidPhone]
+    ]);
 
 
 });
