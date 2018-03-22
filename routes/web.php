@@ -16,4 +16,8 @@
 Route::view('/','welcome');
 
 
+// we can redirect url form router like this
+// first paramter hit url second parameter redirect that url
+
+Route::redirect('/hello','/');
 
