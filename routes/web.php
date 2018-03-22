@@ -34,22 +34,31 @@ Route::get('/users',function (){
 
 });
 
-Route::post('add-users',function (\Illuminate\Http\Request, $request){
+
+Route::get('/add',function (){
+
+    return view('add_user');
+});
+
+
+Route::post('add-user',function (\Illuminate\Http\Request $request){
 
     // this is old way
-    $this->validate($request,[
-       'title' => 'required',
-       'content' =>'required'
+/*    $this->validate($request,[
+       'name' => 'required',
+       'email' =>'required',
+       'password' =>'required'
 
-    ]);
+    ]);*/
 
     // new way right now
 
-    $request->validate([
-        'title' => 'required',
-        'content' =>'required'
+   /* $request->validate([
+        'name' => 'required',
+        'email' =>'required',
+        'password' =>'required'
 
-    ])
+    ]);*/
 
 
 });
