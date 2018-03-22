@@ -21,3 +21,4 @@ Route::view('/','welcome');
 
 Route::redirect('/hello','/');
 
+Auth::routes();
