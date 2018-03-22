@@ -37,5 +37,14 @@
         hello man
         @endAcStatusCheck
 
+@php
+    $user = \App\User::find(1)->first();
+@endphp
+    @AcStatusParamter($user)
+
+            working
+    @endAcStatusParamter
+
+
          </body>
 </html>

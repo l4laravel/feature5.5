@@ -29,6 +29,10 @@ class AppServiceProvider extends ServiceProvider
         });
 
 
+        Blade::if('AcStatusParamter', function ($user){
+            return $user->status;
+        });
+
     }
 
     /**
