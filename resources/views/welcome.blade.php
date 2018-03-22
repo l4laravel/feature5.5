@@ -42,6 +42,8 @@
 @endphp
     @AcStatusParamter($user)
 
+            working man
+            @else
             working
     @endAcStatusParamter
 
